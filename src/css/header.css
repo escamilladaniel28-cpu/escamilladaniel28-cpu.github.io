@@ -1,0 +1,56 @@
+/* Header */
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: first baseline;
+    flex-wrap: wrap;
+    background-color: #000000;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    bottom: 0;
+    flex-wrap: wrap;
+    
+}
+
+
+.btn-mascota {
+    padding: 10px;
+    border: none;
+    background-color: #ffffff;
+    border-radius: 0.5rem;
+    
+
+
+
+
+}
+
+.btn-mascota a {
+    color: rgb(0, 0, 0);
+    text-decoration: underline;
+    font-size: 1rem;
+    
+    
+
+}
+
+
+.btn-mascota:hover {
+    color: #f70000;
+    text-decoration: underline;
+}
+
+
+@media (max-width: 600px) {
+
+    header {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+
+}

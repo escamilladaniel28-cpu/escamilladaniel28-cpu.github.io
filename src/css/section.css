@@ -1,0 +1,169 @@
+/* ─── SECTION BASE ─── */
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    /* centra el contenido horizontalmente */
+    gap: 20px;
+    padding: 30px 20px;
+    border-radius: 10px;
+    background: #ffffff50;
+    
+   
+}
+
+.hero-title {
+    margin-bottom: 5px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(255, 0, 0, 0.2);
+    margin-top: 16px;
+    
+}
+
+/* ─── LISTA DE PROYECTOS ─── */
+ul {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    list-style:none;
+    gap: 10px;
+}
+
+ul li {
+    padding: 10px 16px;
+    background: #000000;
+    border-radius: 5px;
+}
+
+ul li a {
+    color: #f2f2f2;
+    text-decoration: none;
+}
+
+ul li a:hover {
+    color: #6a6969;
+    text-decoration: underline;
+}
+
+/* ─── FORMULARIO DE CONTACTO ─── */
+form {
+    display: flex;
+    flex-wrap: wrap;
+    /* se apila en pantallas pequeñas */
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+    width: 100%;
+}
+
+form input {
+    flex: 1;
+    /* cada input ocupa espacio proporcional */
+    min-width: 160px;
+    /* no se encoge demasiado en móvil */
+    max-width: 300px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+
+#proyectos {
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 4px 15px rgba(255, 0, 0, 0.2);
+    margin-top: 16px;
+    gap: 7px;
+}
+form button {
+    padding: 10px 20px;
+    background-color: #000;
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1rem;
+    white-space: nowrap;
+    /* el texto del botón no se parte */
+}
+
+form button:hover {
+    background-color: #59585e;
+    text-decoration: underline;
+}
+
+/* ─── NAVEGACIÓN ─── */
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 10px;
+    padding: 0;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #727467;
+}
+
+/* ─── RESPONSIVE ─── */
+
+/* Tablet */
+@media (max-width: 900px) {
+    section {
+        width: 90%;
+    }
+}
+
+main {
+
+  display: flex;
+  flex-direction: column;  /* Una debajo de la otra */
+  align-items: center;     /* Centradas horizontalmente */
+  gap: 30px;               /* Espacio entre secciones */
+  padding: 20px;
+}
+
+section, .seccion {
+  width: 60%;   /* Ajusta este % según qué tan anchas las quieras */
+}
+
+
+
+
+
+
+/* Móvil */
+@media (max-width: 600px) {
+    section {
+        width: 95%;
+        padding: 20px 14px;
+    }
+
+    /* inputs y botón ocupan todo el ancho */
+    form input {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    form button {
+        width: 100%;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+    }
+}

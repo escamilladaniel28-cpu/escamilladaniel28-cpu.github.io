@@ -8,19 +8,37 @@
 /* Cuerpo */
 body {
     font-family: Arial, sans-serif;
-    background-color: #4F5235;
-    color: #8A8F63;
+    background-color: #4c4a4a;
+    color: #000000;
 }
 
-h2 { 
+h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: black;
 
 }
 
 
 
+span {
+    display: flex;
+    justify-content: center;
+    text-decoration: underline;
 
 
+
+}
+
+p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+
+}
 
 /* Responsive */
 @media (max-width: 100%) {
@@ -33,9 +51,7 @@ h2 {
         align-items: center;
     }
 }
+
 div {
-    align-items:flex-start
-
-
-
+    align-items: flex-start
 }
