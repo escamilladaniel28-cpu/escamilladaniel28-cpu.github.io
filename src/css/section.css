@@ -119,9 +119,9 @@ nav ul li a:hover {
 }
 
 
-/* ═══════════════════════════════════════
+/* 
    RESPONSIVE — TABLET  (≤ 900px)
-═══════════════════════════════════════ */
+*/
 @media (max-width: 900px) {
     section,
     .seccion {

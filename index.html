@@ -1,6 +1,9 @@
+Index · HTML
+Copiar
+
 <!DOCTYPE html>
 <html lang="es">
-
+ 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,94 +13,93 @@
     <link rel="stylesheet" href="/src/css/about me.css">
     <link rel="stylesheet" href="/src/css/footer.css">
     <link rel="stylesheet" href="/src/css/header.css">
+    <link rel="stylesheet" href="/src/css/responsive.css">
 </head>
-
+ 
 <body>
-
+ 
     <header>
-
+ 
         <h1>PORTAFOLIO WEB</h1>
-
+ 
+        <!-- ✅ FIX 1: Botón hamburguesa movido aquí dentro del <header> -->
+        <button class="menu-toggle" id="menu-toggle">
+            ☰
+        </button>
+ 
         <nav>
-            <ul>
-
+            <!-- ✅ FIX 2: Agregado id="nav-menu" para que el JS funcione -->
+            <ul id="nav-menu">
                 <li><a href="#">Home</a></li>
                 <li><a href="https://canva.link/gd2w0s9j4u939kh">About me</a></li>
                 <li><a href="#proyectos">Proyects</a></li>
-
                 <li><a href="#contacto">Contact</a></li>
-
             </ul>
         </nav>
+ 
         <button class="btn-mascota">
             <a href="/src/views/mascotas.html">Pets</a>
         </button>
+ 
     </header>
-
-
-
-    <section class="hero">
-        <h2 class="hero-title">MILTON ESCAMILLA</h2>
-        <span>Developer web</span>
-        <div class="hero-descripcion">
-            Soy una persona en constante aprendizaje y crecimiento en el mundo de la tecnología.
-            Actualmente me estoy formando en desarrollo de software, donde he adquirido habilidades en programación
-            con Python, lógica de programación, estructuras de control, listas y funciones.
-            Me caracterizo por ser disciplinado, resiliente y con una mentalidad enfocada en mejorar cada
-            día. Disfruto enfrentar nuevos retos, aprender de los errores y fortalecer mis conocimientos a través de
-            la práctica constante.
-            </p>
-        </div>
-        <div class="hero-img">
-            <img src="/public/img/milton.webp" alt="Foto de Milton Escamilla">
-        </div>
-    </section>
-
-
-
-
-
-
-    <!-- Proyectos -->
-    <section id="proyectos">
-
-        <h2>Proyects</h2>
-        Here is the proyects that i create in mi Riwi progress. </p>
-        <ul>
-            <li><a href="#">Inventary system</a></li>
-            <li><a href="/public/img/capture.png">My first web</a></li>
-            <li><a href="#">Soon...</a></li>
-            <li><a href="#">Python system </a></li>
-            <li><a href="#">HTML system</a></li>
-            <li><a href="#">CSS system</a></li>
-        </ul>
-    </section>
-
-    <!-- Contacto -->
-    <section id="contacto">
-
-        <h2>Contacto</h2>
-        <form>
-            <input type="text" placeholder="Tu nombre">
-            <input type="email" placeholder="Tu correo">
-            <button>Send</button>
-        </form>
-    </section>
-
+ 
+    <!-- ✅ FIX 3: <main> de apertura agregado -->
+    <main>
+ 
+        <section class="hero">
+            <h2 class="hero-title">MILTON ESCAMILLA</h2>
+            <span>Developer web</span>
+            <div class="hero-descripcion">
+                <p>
+                    Soy una persona en constante aprendizaje y crecimiento en el mundo de la tecnología.
+                    Actualmente me estoy formando en desarrollo de software, donde he adquirido habilidades en programación
+                    con Python, lógica de programación, estructuras de control, listas y funciones.
+                    Me caracterizo por ser disciplinado, resiliente y con una mentalidad enfocada en mejorar cada
+                    día. Disfruto enfrentar nuevos retos, aprender de los errores y fortalecer mis conocimientos a través de
+                    la práctica constante.
+                </p>
+            </div>
+            <div class="hero-img">
+                <img src="/public/img/milton.webp" alt="Foto de Milton Escamilla">
+            </div>
+        </section>
+ 
+        <!-- Proyectos -->
+        <section id="proyectos">
+            <h2>Proyects</h2>
+            <p>Here is the proyects that i create in mi Riwi progress.</p>
+            <ul>
+                <li><a href="#">Inventary system</a></li>
+                <li><a href="/public/img/capture.png">My first web</a></li>
+                <li><a href="#">Soon...</a></li>
+                <li><a href="#">Python system</a></li>
+                <li><a href="#">HTML system</a></li>
+                <li><a href="#">CSS system</a></li>
+            </ul>
+        </section>
+ 
+        <!-- Contacto -->
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <form>
+                <input type="text" placeholder="Tu nombre">
+                <input type="email" placeholder="Tu correo">
+                <button>Send</button>
+            </form>
+        </section>
+ 
     </main>
-
+    <!-- ✅ FIX 3: </main> ahora tiene su apertura correcta arriba -->
+ 
     <footer>
-        <link rel="stylesheet" href="css/footer.css">
+        <!-- ✅ FIX 5: <link> de CSS eliminado del footer (ya está en el <head>) -->
         <p>© 2026 Milton Escamilla</p>
-        <div1>
-
-            <img src="/public/img/riwi.webp" alt="Imgen de riwi" id="riwi">
-
-
-
-        </div1>
+        <!-- ✅ FIX 4: <div1> cambiado a <div> -->
+        <div>
+            <img src="/public/img/riwi.webp" alt="Imagen de riwi" id="riwi">
+        </div>
     </footer>
-
+ 
 </body>
-
+<script src="/src/scripts/scripts.js"></script>
 </html>
