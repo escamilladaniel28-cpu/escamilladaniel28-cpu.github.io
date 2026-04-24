@@ -1,26 +1,23 @@
-/* ─── SECTION BASE ─── */
+/* 
+   SECTION BASE
+    */
 section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 2rem;
+    gap: 20px;                  /* ✅ eliminado el gap duplicado */
     max-width: 1200px;
     margin: 0 auto;
-    /* centra el contenido horizontalmente */
-    gap: 20px;
     padding: 30px 20px;
-    border-radius: 10px;
-    background: #ffffff50;
-
-
+    border-radius: var(--radius-md);
+    background: var(--color-surface);
 }
 
 .hero-title {
     margin-bottom: 5px;
     text-align: center;
-    box-shadow: 0 4px 15px rgba(255, 0, 0, 0.2);
+    box-shadow: var(--shadow-red);
     margin-top: 16px;
-
 }
 
 /* ─── LISTA DE PROYECTOS ─── */
@@ -33,25 +30,34 @@ ul {
 
 ul li {
     padding: 10px 16px;
-    background: #000000;
-    border-radius: 5px;
+    background: var(--color-dark);
+    border-radius: var(--radius-sm);
 }
 
 ul li a {
-    color: #f2f2f2;
+    color: var(--color-light);
     text-decoration: none;
+    font-size: var(--font-base);
 }
 
 ul li a:hover {
-    color: #6a6969;
+    color: var(--color-muted);
     text-decoration: underline;
+}
+
+/* ─── SECCIÓN PROYECTOS ─── */
+#proyectos {
+    display: flex;
+    justify-content: center;
+    box-shadow: var(--shadow-red);
+    margin-top: 16px;
+    gap: 7px;
 }
 
 /* ─── FORMULARIO DE CONTACTO ─── */
 form {
     display: flex;
     flex-wrap: wrap;
-    /* se apila en pantallas pequeñas */
     justify-content: center;
     align-items: center;
     gap: 10px;
@@ -61,39 +67,28 @@ form {
 
 form input {
     flex: 1;
-    /* cada input ocupa espacio proporcional */
     min-width: 160px;
-    /* no se encoge demasiado en móvil */
     max-width: 300px;
     padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 1rem;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-sm);
+    font-size: var(--font-base);
 }
 
-
-#proyectos {
-    display: flex;
-    justify-content: center;
-    box-shadow: 0 4px 15px rgba(255, 0, 0, 0.2);
-    margin-top: 16px;
-    gap: 7px;
-}
-
+/* ─── BOTÓN FORMULARIO ─── */
 form button {
     padding: 10px 20px;
-    background-color: #000;
-    color: #ffffff;
+    background-color: var(--color-dark);
+    color: var(--color-white);
     border: none;
-    border-radius: 10px;
+    border-radius: var(--radius-md);
     cursor: pointer;
-    font-size: 1rem;
+    font-size: var(--font-base);
     white-space: nowrap;
-    /* el texto del botón no se parte */
 }
 
 form button:hover {
-    background-color: #59585e;
+    background-color: var(--color-muted);
     text-decoration: underline;
 }
 
@@ -109,32 +104,33 @@ nav ul {
 }
 
 nav ul li a {
-    color: #ffffff;
+    color: var(--color-white);
     text-decoration: none;
     font-weight: bold;
+    font-size: var(--font-base);
 }
 
 nav ul li a:hover {
     color: #727467;
 }
 
-
 /* 
-   RESPONSIVE — TABLET  (≤ 900px)
-*/
+   RESPONSIVE — TABLET (≤ 900px)
+    */
 @media (max-width: 900px) {
     section,
     .seccion {
-        width: min(90%, var(--max-width));
+        width: 90%;
     }
 
+    /* 2 columnas en tablet */
     ul {
         grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
     }
 }
 
 /* 
-   RESPONSIVE — MÓVIL  (≤ 600px) */
+   RESPONSIVE — MÓVIL (≤ 600px)*/
 @media (max-width: 600px) {
     section,
     .seccion {
@@ -142,12 +138,12 @@ nav ul li a:hover {
         padding: 20px 14px;
     }
 
-    /* grid de 1 columna en móvil */
+    /* 1 columna en móvil */
     ul {
         grid-template-columns: 1fr;
     }
 
-    /* inputs y botón a ancho completo */
+    /* Inputs y botón a ancho completo */
     form input {
         flex: 1 1 100%;
         max-width: 100%;
@@ -165,7 +161,8 @@ nav ul li a:hover {
 }
 
 /* 
-   RESPONSIVE — MUY PEQUEÑO  (≤ 360px)*/
+   RESPONSIVE — MUY PEQUEÑO (≤ 360px)
+   */
 @media (max-width: 360px) {
     section,
     .seccion {

@@ -1,7 +1,7 @@
-/* Footer */
+/* FOOTER*/
 footer {
-    background-color: #000;
-    color: #fff;
+    background-color: var(--color-dark);
+    color: var(--color-white);
     text-align: center;
     padding: 30px;
     margin-top: 80px;
