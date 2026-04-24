@@ -136,7 +136,7 @@ Software development student — RIWI
 ![Riwi](public/img/riwi.webp)
 
 ---
-
+view of the page: https://escamilladaniel28-cpu.github.io/
 ## 📚 Week
 
 Workshop Week 3 — Media queries, responsive design and basic JavaScript optimization
